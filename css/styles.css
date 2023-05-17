@@ -7,6 +7,7 @@
   --p-text-color: #434455;
   --btn-bg-color: #4d5ae5;
   --btn-color-x: #e7e9fc;
+  --link-color-x: #8e8f99;
 }
 
 body {
@@ -518,7 +519,7 @@ img {
 
 .sub-title-customers {
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.02em;
@@ -534,6 +535,7 @@ img {
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  color: var(--link-color-x);
 }
 
 .sponsor-list {
@@ -545,10 +547,15 @@ img {
 .sponsor-list-link:hover,
 .sponsor-list-link:focus {
   border: 1px solid #404bbf;
+  color: #404bbf;
 }
 
 .sponsor-list-icon {
-  fill: #8e8f99;
+  fill: currentColor;
+}
+
+.sponsor-list-item {
+  width: calc((100% - 120px) / 6);
 }
 
 .sponsor-list-icon:hover,
