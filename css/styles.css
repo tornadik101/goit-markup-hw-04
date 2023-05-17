@@ -220,6 +220,16 @@ img{
   display: block;
 }
 
+.main-baner-bg{
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/people-office\ 1.jpg);
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+}
+
 /*!================= list of skills================= */
 
 .skills-list{
@@ -253,10 +263,24 @@ img{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  /* text-align: center; */
+  margin-bottom: 8px;
+  color: var(--p-text-color);
+}
+
+
+.text-content-our {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 8px;
   color: var(--p-text-color);
 }
+
+
 
 .text-content-portf{
   font-style: normal;
@@ -264,9 +288,26 @@ img{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /* margin-bottom: 8px; */
     color: var(--p-text-color);
 }
+
+.containers{
+  display: flex;
+  width: 264px;
+  height: 112px;
+  border: 2px black;
+  margin-bottom: 8px;
+  background-color: #F4F4FD;
+}
+
+.skill-list-dekor{
+  width: 64px;
+  height: 64px;
+  margin: auto;
+}
+
+
+
 
 /*!=================== What are we doing============== */
 
@@ -292,14 +333,27 @@ img{
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  /* text-align: center; */
+  margin-bottom: 8px;
+  color: var(--heading-main-color);
+}
+
+.title-three-our {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 8px;
   color: var(--heading-main-color);
 }
 
+
+
+
 .gallery{
   display: flex;
-  /* justify-content: center; */
   flex-wrap: wrap;
   gap: 24px;
 
@@ -324,7 +378,6 @@ img{
 .team{
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   gap: 24px; 
 }
 
@@ -335,7 +388,6 @@ img{
     text-transform: capitalize;
     letter-spacing: 0.02em;
     margin-bottom: 72px;
-    /* padding-top: 120px; */
     color: var(--heading-main-color);
 }
 
@@ -409,4 +461,105 @@ img{
 
 .content-wraper-one{
   width: calc((100% - 48px) / 3);
+}
+
+.social-list-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+}
+
+.social-list-link:hover,
+.social-list-link:focus{
+  background-color: #404BBF;
+}
+
+
+.social-list{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+
+.sub-title-customers{
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  padding-top: 120px;
+  margin-bottom: 72px;
+  color: var(--heading-main-color);}
+
+.sponsor-list-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+
+.sponsor-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 120px;
+  gap: 24px;
+}
+.sponsor-list-link:hover,
+.sponsor-list-link:focus{
+  border: 1px solid #404BBF
+}
+
+.sponsor-list-icon{
+  fill: #8e8f99;
+}
+
+.sponsor-list-icon:hover,
+.sponsor-list-icon:focus{
+  fill: #404BBF;
+}
+
+.footer-social-link{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: #4D5AE5;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus{
+  background-color: #31D0AA;
+}
+
+.social-media-list{
+ width: 208px;
+ height: 80px;
+}
+
+.footer-social-list{
+display: flex;
+gap: 16px;
+margin-top: 16px;
+}
+
+.page-footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-adress{
+  margin-right: 120px;
+}
+.title-three-footer{
+  color: var(--background-color);
 }
